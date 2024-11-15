@@ -83,26 +83,34 @@ header {
     position: relative;
 }
 
-
 .navbar-mobile {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 5;
 
     width: 180px;
     height: 100vh;
     padding: 1em 1.75em;
 
     background-color: var(--white);
-}
-
-.backdrop {
-    
+    box-shadow: 0 0 0 5000px var(--light-box-bg);
 }
 
 .navbar-mobile img{
     width: 1.5em;
+    
 }
 
+.navbar-mobile li{
+    font-weight: var(--fw-700);
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+img[alt="profile icon"] {
+    width: 40px;
+}
 
