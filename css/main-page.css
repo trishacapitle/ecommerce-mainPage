@@ -28,6 +28,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+html {
     font-family: 'Kumbh Sans', sans-serif; 
 }
 
@@ -52,6 +56,7 @@ ul {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 5em;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
@@ -92,7 +97,7 @@ ul {
 
 /* specific classes */
 
-.header-menu {
+.desktop-nav {
     height: 80px;
 }
 
@@ -173,3 +178,18 @@ h2 {
     background-color: var(--orange);
 }
 
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+}
+.mobile-nav-open {
+    display: none;
+}
