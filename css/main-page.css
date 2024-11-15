@@ -93,13 +93,14 @@ a:hover {
     left: 0;
     z-index: 5;
 
-    width: 180px;
+    width: 250px;
     height: 100vh;
     padding: 1em 1.75em;
 
     background-color: var(--white);
     box-shadow: 0 0 0 5000px var(--light-box-bg);
 }
+
 
 .navbar-mobile img{
     padding-top: 1em;
@@ -110,6 +111,11 @@ a:hover {
 
 .navbar-mobile li{
     font-weight: var(--fw-700);
+    padding: 1em .5em;
+}
+
+.navbar-mobile li:hover{
+    background-color: var(--grayish-blue);
 }
 
 .navbar-mobile, #menu {
