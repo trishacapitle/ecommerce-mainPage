@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/main-page.css">
 </head>
 <body>
-  <header>
-    <section class="navbar flex-row justify-between">
+  <header class="flex-row justify-between">
+    <section class="navbar flex-row align-center" style="--gap: 2em;">
       <img src="images/icon-menu.svg" alt="menu-icon">
       <img src="images/logo.svg" alt="logo">
       <ul class="flex-row">
@@ -19,7 +19,8 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </section>
-    <section class="navbar-mobile">
+    <section class="navbar-mobile flex-column" style="--gap: 2em;">
+      <div class="backdrop"></div>
       <img src="images/icon-close.svg" alt="close icon">
       <ul class="flex-column">
         <li>Collections</li>
@@ -29,7 +30,7 @@
         <li>Contact</li>
       </ul>
     </section>
-    <section class="cart-profile">
+    <section class="cart-profile flex-row align-center" style="--gap: 2em;">
       <img src="images/icon-cart.svg" alt="cart icon">
       <img src="images/image-avatar.png" alt="profile icon">
     </section>

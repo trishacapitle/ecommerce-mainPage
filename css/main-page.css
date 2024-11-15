@@ -39,5 +39,70 @@ body {
     margin: auto;
 }
 
+/* utility classes */
+.flex-row {
+    display: flex;
+    gap: var(--gap);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+* {
+    border: 1px solid red;
+}
+
+/* custom */
+
+header {
+    height: 60px;
+    padding: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header {
+    position: relative;
+}
+
+
+.navbar-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 180px;
+    height: 100vh;
+    padding: 1em 1.75em;
+
+    background-color: var(--white);
+}
+
+.backdrop {
+    
+}
+
+.navbar-mobile img{
+    width: 1.5em;
+}
 
 
