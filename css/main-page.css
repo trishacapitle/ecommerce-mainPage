@@ -86,9 +86,6 @@ a:hover {
     border-bottom: 3px solid var(--orange);
 }
 
-header {
-    position: relative;
-}
 
 .navbar-mobile {
     position: absolute;
@@ -105,7 +102,9 @@ header {
 }
 
 .navbar-mobile img{
-    width: 1.5em;
+    padding-top: 1em;
+    width: 1em;
+    margin-bottom: 2em;
     
 }
 
@@ -113,7 +112,7 @@ header {
     font-weight: var(--fw-700);
 }
 
-.navbar-mobile, .menu {
+.navbar-mobile, #menu {
     display: none;
 }
 
@@ -128,7 +127,7 @@ img[alt="profile icon"] {
         max-width: 90%;
     }
 
-    .menu {
+    #menu {
         display: flex;
     }
 
