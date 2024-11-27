@@ -110,3 +110,19 @@ svg {
     cursor: pointer;
 }
 
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
