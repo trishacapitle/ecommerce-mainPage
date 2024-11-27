@@ -171,5 +171,28 @@ img[alt="profile icon"] {
     .navbar {
         gap: 1em;
     }
+}
 
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    width: 18px;
+    height: 16px;
+    color: var(--white);
+    font-weight: var(--fw-700);
+    font-size: .75rem;
+    text-align: center;
+}
+
+.cart-content {
+    position: absolute;
+    display: none;
 }
