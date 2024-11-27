@@ -196,3 +196,12 @@ img[alt="profile icon"] {
     position: absolute;
     display: none;
 }
+
+.profile-icon {
+    cursor: pointer;
+}
+
+.profile-icon:hover {
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+}

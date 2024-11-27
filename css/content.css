@@ -96,6 +96,11 @@
     gap: 1em;
 }
 
+#add-cart-btn:hover {
+    background-color: var(--pale-orange);
+    color: var(--dark-grayish-blue);
+}
+
 svg {
     fill: white;
 }
@@ -108,4 +113,8 @@ svg {
 
 #minus-btn, #add-btn {
     cursor: pointer;
+}
+
+#minus-btn:hover, #add-btn:hover {
+    color: var(--pale-orange);
 }
