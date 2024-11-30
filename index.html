@@ -40,48 +40,48 @@
     </section>
   </header>
 
-  <div class="lightbox">
-    <img src="images/icon-close.svg" alt="close button for lightbox">
-      <div class="lightbox-content flex-column">
-        <div class="mainImg">
-          <img src="images/image-product-1.jpg" alt="">
-          <div class="lightbox-control">
-            <img src="images/icon-previous.svg" alt="previous arrow">
-            <img src="images/icon-next.svg" alt="next arrow">
-          </div>
-        </div>
-        <div class="lightbox-thumb flex-row">
-          <div class="thumbSlides">
-            <img src="images/image-product-1-thumbnail.jpg" alt="product picture 1">
-          </div>
-          <div class="thumbSlides">
-            <img src="images/image-product-2-thumbnail.jpg" alt="product picture 2">
-          </div>
-          <div class="thumbSlides">
-            <img src="images/image-product-3-thumbnail.jpg" alt="product picture 3">
-          </div>
-          <div class="thumbSlides">
-            <img src="images/image-product-4-thumbnail.jpg" alt="product picture 4">
-          </div>
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content flex-column">
+      <svg class="lightbox-close" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" ><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      <div class="lightboxImg">
+        <img src="images/image-product-1.jpg" alt="product picture 1" class="lightboxMain">
+        <div class="lightbox-control">
+          <svg class="previous" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" ><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+          <svg class="next" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         </div>
       </div>
+      <div class="lightbox-thumb flex-row justify-between " style="--gap: 2em;">
+        <picture class="thumbSlides">
+          <img src="images/image-product-1-thumbnail.jpg" alt="product picture 1">
+        </picture>
+        <picture class="thumbSlides">
+          <img src="images/image-product-2-thumbnail.jpg" alt="product picture 2">
+        </picture>
+        <picture class="thumbSlides">
+          <img src="images/image-product-3-thumbnail.jpg" alt="product picture 3">
+        </picture>
+        <picture class="thumbSlides">
+          <img src="images/image-product-4-thumbnail.jpg" alt="product picture 4">
+        </picture>
+      </div>
+    </div>
     
   </div>
 
   <main class="product-section flex-row align-center" style="--gap: 6vw;">
     <div class="product-gallery flex-column" style="--gap: 1em;">
-      <img class="mainImg" src="images/image-product-1.jpg" alt="main product image">
+      <img class="mainImg" src="images/image-product-1.jpg" alt="main product image" >
       <div class="product-thumbs flex-row justify-between">
-        <picture id="thumb1" class="thumbnail active">
+        <picture class="thumbnail active">
           <img src="images/image-product-1-thumbnail.jpg" alt="product thumbnail 1">
         </picture>
-        <picture id="thumb2" class="thumbnail">
+        <picture class="thumbnail">
           <img src="images/image-product-2-thumbnail.jpg" alt="product thumbnail 2">
         </picture>
-        <picture id="thumb3" class="thumbnail">
+        <picture class="thumbnail">
           <img src="images/image-product-3-thumbnail.jpg" alt="product thumbnail 3">
         </picture>
-        <picture id="thumb4" class="thumbnail">
+        <picture class="thumbnail">
           <img src="images/image-product-4-thumbnail.jpg" alt="product thumbnail 4">
         </picture>
       </div>
@@ -110,5 +110,6 @@
   <script type="module" src="js/nav.js"></script>
   <script type="module" src="js/gallery.js"></script>
   <script type="module" src="js/qty-handler.js"></script>
+  <script type="module" src="js/lightbox.js"></script>
 </body>
 </html>

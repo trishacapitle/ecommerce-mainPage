@@ -1,0 +1,78 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  align-items: center;
+  width: 450px;
+  height: 100vh;
+}
+
+.lightbox-close {
+  align-self: end;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+  fill: var(--orange);
+}
+
+* {
+  border: 1px solid red;
+}
+
+.lightboxImg {
+  position: relative;
+}
+
+.lightbox-control svg {
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+  fill: var(--dark-grayish-blue);
+  transition: all 0.3s ease;
+}
+
+.previous {
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next { 
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-control svg:hover {
+  fill: var(--orange);
+}
+
+.lightboxImg img {
+  width: 450px;
+  border-radius: 16px;
+}
+
+.lightbox-thumb img {
+  margin-top: 2em;
+  width: 70px;
+  border-radius: 8px;
+  cursor: pointer;
+}
